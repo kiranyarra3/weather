@@ -110,7 +110,6 @@ app.get('*',(req,res)=>{
     })
 
 
-
 app.listen(5000,()=>{
     console.log('server is set up on port 5000')
 })
