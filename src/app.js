@@ -4,7 +4,7 @@ const hbs =require('hbs')
 const request =require('request')
 const geocode =require('./utils/geocode')
 const forecast =require('./utils/forecast')
-
+const port=process.env.PORT||5000
 
 const app=express()
 //define paths for express config
@@ -110,6 +110,6 @@ app.get('*',(req,res)=>{
     })
 
 
-app.listen(5000,()=>{
-    console.log('server is set up on port 5000')
+app.listen(port,()=>{
+    console.log('server is set up on port', port)
 })
